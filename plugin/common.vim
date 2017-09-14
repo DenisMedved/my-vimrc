@@ -1,7 +1,7 @@
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Code completion plugin
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:set number
+set number
 set complete-=t                                             " Do not search tag files when auto-completing
 set complete-=i                                             " Do not search include files when auto-completing
 set completeopt=menu,menuone                                " Complete options (disable preview scratch window, longest removed to aways show menu)
@@ -9,7 +9,7 @@ set pumheight=20                                            " Limit popup menu h
 set concealcursor=inv                                       " Conceal in insert (i), normal (n) and visual (v) modes
 set conceallevel=2                                          " Hide concealed text completely unless replacement character is defined
 let g:libclang_location = "/usr/lib/libclang.so.3.9"
-let g:clang_use_library = 1                                 " Use libclang directly
+let g:clang_use_library = 0                                 " Use libclang directly
 let g:clang_library_path = g:libclang_location              " Path to the libclang on the system
 let g:clang_complete_auto = 1                               " Run autocompletion immediatelly after ->, ., ::
 let g:clang_complete_copen = 1                              " Open quickfix window on error
