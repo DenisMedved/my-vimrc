@@ -1,5 +1,9 @@
 nmap <F8> :TagbarToggle<CR>
 nmap <F3> :NERDTreeFocus<CR>
+set switchbuf=usetab,newtab
+nnoremap <F8> :sbnext<CR>
+nnoremap <S-F8> :sbprevious<CR
+
 
 " """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Buffer editing
