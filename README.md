@@ -10,6 +10,6 @@
 	`$ ln -s ~/.vim/vimrc ~/.vimrc`
 4. Install all plugins.
 
-	`$ vim +PluginInstall +qall``
+	`$ vim +PluginInstall +qall`
 5. Install YouCompleteMe https://github.com/Valloric/YouCompleteMe
  
