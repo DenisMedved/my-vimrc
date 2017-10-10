@@ -10,6 +10,34 @@ set concealcursor=inv                                       " Conceal in insert 
 set conceallevel=2                                          " Hide concealed text completely unless replacement character is defined
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
 set encoding=utf-8
+set number
+set complete+=.
+set complete+=k
+set complete+=b
+set complete+=t
+set laststatus=2
+set showcmd
+set statusline=%f%h%m%r
+set statusline+=%=
+set statusline+=%<format=%{&fileformat}\ file=%{&fileencoding}\ enc=%{&encoding}\ %b(0x%B)\ %l,%c%V\ %P
+set hlsearch
+set incsearch
+set nowrapscan
+set ignorecase
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set nocompatible
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+set nocompatible
+set backspace=indent,eol,start
+set nobackup
+set backspace=indent,eol,start
+let g:ragtag_global_maps = 1
 let g:airline_powerline_fonts=1
 let g:libclang_location = "/usr/lib64/libclang.so"
 let g:clang_use_library = 1                                 " Use libclang directly
@@ -21,6 +49,11 @@ let g:clang_snippets = 1                                    " Enable function ar
 let g:clang_snippets_engine = 'ultisnips'                   " Use UltiSnips engine for function args autocompletion (provides mechanism to jump over to the next argument)
 "let g:clang_snippets_engine = 'clang_complete'             " Use clang_complete engine for function args autocompletion
 let g:clang_conceal_snippets = 1                            " clang_complete engine related setting
+let g:editor_use_bkp_files= 0
+let g:editor_use_swp_files= 0
+let g:editor_use_undo_files= 0
+let g:editor_auto_highlight_word_occurences = 1
+let g:editor_auto_highlight_word_occurences_after_ms = 500
 "let g:clang_trailing_placeholder = 1                       " clang_complete engine related setting
 "let g:clang_hl_errors = 0                                  " Turn-off error highlighting
 "let g:clang_complete_patterns = 1                          " (Does not work for me) Turn-on autocompletion for language constructs (i.e. loops)
