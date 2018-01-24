@@ -50,4 +50,6 @@ Plugin 'powerline/powerline-fonts'
 Plugin 'chiel92/vim-autoformat'
 Plugin 'tpope/vim-ragtag'
 Plugin 'TagHighlight'
+Plugin 'gtags.vim'
+Plugin 'hdima/python-syntax'
 
