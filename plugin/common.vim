@@ -38,6 +38,7 @@ set backspace=indent,eol,start
 set nobackup
 set listchars=tab:>·,trail:~,space:·
 set list
+let g:mapleader= '\'
 let g:ragtag_global_maps = 1
 let g:airline_powerline_fonts=1
 let g:libclang_location = "/usr/lib64/libclang.so"
